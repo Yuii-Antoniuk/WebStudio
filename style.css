@@ -1,0 +1,94 @@
+:root {
+    --text-color:#212121;
+    --white-text-color:#FFFFFF;
+    --gray-text-color:#757575;
+    --span-buttonBackground-aHover-color:#2196F3;
+    --hero-section-bacground-color:#2F303A;
+    --OurTeam-section-bacground-color:#F5F4FA;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+}
+
+span {
+    color: var(--span-buttonBackground-aHover-color);
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+/*<header>*/
+
+header {
+    display: flex;
+}
+
+h1, .footer-logo {
+    font-family: "Raleway", sans-serif;
+}
+
+.header-menu-list {
+    margin-left: 100px;
+}
+
+.header-menu-list-items {
+    display: inline;
+    margin-left: 20px;
+}
+
+.header-menu-list-items:hover {
+    color: var(--span-buttonBackground-aHover-color);
+}
+
+/*header*/
+/*main*/
+
+/*hero-section*/
+
+.hero {
+    background-color: var(--hero-section-bacground-color);
+    text-align: center;
+    padding: 100px 0px 100px 0px;
+}
+
+.hero-section-h2 {
+    font-size: 44px;
+    color: var(--white-text-color);
+}
+
+.hero-section-button {
+    background-color: var(--span-buttonBackground-aHover-color);
+    color: var(--white-text-color);
+    padding: 10px 10px 10px 10px;
+    border: 0;
+    border-radius: 3px;
+}
+
+/*hero-section*/
+
+/*features-section*/
+
+.features {
+    display: flex;
+}
+
+.features-section-items {
+    width: 270px;
+}
+
+.features-section-div-h3-litems {
+    font-size: 14px;
+}
+
+.features-section-div-p-litems {
+    color: var(--gray-text-color);
+}
+
+/*features-section*/
+
+/*</main>*/
+
