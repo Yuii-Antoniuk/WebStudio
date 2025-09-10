@@ -1,15 +1,29 @@
 :root {
     --text-color:#212121;
-    --white-text-color:#FFFFFF;
+    --white-text-color-background-color:#FFFFFF;
     --gray-text-color:#757575;
     --span-buttonBackground-aHover-color:#2196F3;
-    --hero-section-bacground-color:#2F303A;
+    --hero-section-footer-bacground-color:#2F303A;
     --OurTeam-section-bacground-color:#F5F4FA;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     color: var(--text-color);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+html {
+    width: 1600px;
+    height: 2496px;
+
+}
+
+h1, h2, h3, p {
+    margin: 0;
 }
 
 span {
@@ -18,52 +32,89 @@ span {
 
 li {
     list-style: none;
-    display: inline;
+    display: inline-block;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
 }
 
 /*<header>*/
 
 header {
+    height: 80px;
+    border-bottom: 2px solid #cecece;
+    margin: 0;
+}
+
+.header-container {
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1, .footer-logo {
     font-family: "Raleway", sans-serif;
-}
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 26px;
+} 
 
 .header-menu-list {
-    margin-left: 100px;
+    display: flex;
+    width: 628px;   
+    justify-content: space-between; 
 }
 
 .header-menu-list-items {
     display: inline;
-    margin-left: 20px;
+    vertical-align: middle;
 }
 
-.header-menu-list-items:hover {
+.header-menu-a-items {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header-menu-a-items:hover {
     color: var(--span-buttonBackground-aHover-color);
 }
 
 /*header*/
 /*main*/
 
+
 /*hero-section*/
 
 .hero {
-    background-color: var(--hero-section-bacground-color);
+    background-color: var(--hero-section-footer-bacground-color);
+    height: 600px;
+    margin: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 100px 0px 100px 0px;
 }
 
 .hero-section-h2 {
     font-size: 44px;
-    color: var(--white-text-color);
+    color: var(--white-text-color-background-color);
 }
 
 .hero-section-button {
+    width: 216;
+    height: 50px;
     background-color: var(--span-buttonBackground-aHover-color);
-    color: var(--white-text-color);
-    padding: 10px 10px 10px 10px;
+    color: var(--white-text-color-background-color);
+    font-size: 16px;
+    padding: auto;
     border: 0;
     border-radius: 3px;
 }
@@ -73,15 +124,29 @@ h1, .footer-logo {
 /*features-section*/
 
 .features {
+    padding: 100px 0;
+}
+
+.features-section-container {
     display: flex;
+    justify-content: space-between;
+}
+
+.first::before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-image: url(antenna\ 1.png);
 }
 
 .features-section-items {
     width: 270px;
+    height: 74px;
 }
 
 .features-section-div-h3-litems {
     font-size: 14px;
+    margin-bottom: 4px;
 }
 
 .features-section-div-p-litems {
@@ -89,6 +154,77 @@ h1, .footer-logo {
 }
 
 /*features-section*/
+/*WhatDoWeDo-section*/
+
+.WhatDoWeDo-section-container {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.WhatDoWeDo-section-h2 {
+    margin: 0 auto;
+    font-size: 42px;
+}
+
+.WhatDoWeDo-section-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.WhatDoWeDo-section-img-list-items {
+    width: 370px;
+    height: 294px;
+}
+
+/*WhatDoWeDo-section*/
+/*OurTeam*/
+
+.OurTeam {
+    background-color: var(--OurTeam-section-bacground-color);
+    padding: 100px 0;
+}
+
+.OurTeam-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.OurTeam-section-h2 {
+    font-size: 36px;
+}
+
+.OurTeam-section-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.OurTeam-section-list-items {
+    width: 270px;
+    height: 368px;
+    background-color: var(--white-text-color-background-color);
+    border-radius: 5px;
+}
+
+.OurTeam-section-img-items {
+    height: 260px;
+}
+
+/*OurTeam*/
+/*footer*/
+
+footer {
+    background-color: var(--hero-section-footer-bacground-color);
+}
+
+
+
+/*footer*/
 
 /*</main>*/
 
