@@ -1,0 +1,321 @@
+:root {
+    --text-color:#212121;
+    --white-text-color-background-color:#FFFFFF;
+    --gray-text-color:#757575;
+    --span-buttonBackground-aHover-color:#2196F3;
+    --hero-section-footer-bacground-color:#2F303A;
+    --OurTeam-section-bacground-color:#F5F4FA;
+}
+
+html {
+    width: 1600px;
+    height: 2496px;
+}
+
+body {
+    width: 1600px;
+    height: 2496px;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+span {
+    color: var(--span-buttonBackground-aHover-color);
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+section:not(.OurTeam) {
+    margin-bottom: 100px;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/*<header>*/
+
+header {
+    height: 80px;
+    border-bottom: 2px solid #cecece;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+h1, .footer-logo {
+    font-family: "Raleway", sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 26px;
+} 
+
+.header-menu-list {
+    display: flex;
+    width: 628px;   
+    justify-content: space-between; 
+}
+
+.header-menu-list-items {
+    display: inline;
+    vertical-align: middle;
+}
+
+.header-menu-a-items {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header-menu-a-items:hover {
+    color: var(--span-buttonBackground-aHover-color);
+}
+
+/*header*/
+/*main*/
+
+
+/*hero-section*/
+
+.hero {
+    background-image: url(./images/Img\ \(14\).png);
+    height: 600px;
+    margin: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section-h2 {
+    font-size: 44px;
+    color: var(--white-text-color-background-color);
+}
+
+.hero-section-button {
+    width: 216px;
+    height: 50px;
+    background-color: var(--span-buttonBackground-aHover-color);
+    color: var(--white-text-color-background-color);
+    font-size: 16px;
+    padding: auto;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/*hero-section*/
+
+/*features-section*/
+
+.features {
+    margin: 100px 0;
+}
+
+.features-section-container {
+    height: 248px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.features-section-item {
+    width: 270px;
+    height: 248px;
+}
+
+.features-section-items:nth-child(1):before {
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("./images/Group.png");
+    background-color: var(--OurTeam-section-bacground-color);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.features-section-items:nth-child(2):before {
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("./images/clock.png");
+    background-color: var(--OurTeam-section-bacground-color);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.features-section-items:nth-child(3):before {
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("./images/diagram.png");
+    background-color: var(--OurTeam-section-bacground-color);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.features-section-items:nth-child(4
+):before {
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("./images/astronaut.png");
+    background-color: var(--OurTeam-section-bacground-color);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.features-section-list-litems-h3 {
+    order: 1;
+    width: 270px;
+}
+
+.features-section-div-p-litems {
+    color: var(--gray-text-color);
+    order: -1;
+    width: 270px;
+}
+/*
+.first::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 270px; 
+  height: 120px;
+  background: url("./images/antenna\ 1.jpg") no-repeat center;
+  background-color: var(--OurTeam-section-bacground-color);
+  z-index: 1;
+}
+*/
+/*features-section*/
+/*WhatDoWeDo-section*/
+
+.WhatDoWeDo-section-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.WhatDoWeDo-section-h2 {
+    margin: 0 auto;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.WhatDoWeDo-section-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.WhatDoWeDo-section-img-list-items {
+    width: 370px;
+    height: 294px;
+}
+
+/*WhatDoWeDo-section*/
+/*OurTeam*/
+
+.OurTeam {
+    background-color: var(--OurTeam-section-bacground-color);
+    height: 648px;
+    padding: 95px 0;
+}
+
+.OurTeam-section-container {
+    height: 368px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.OurTeam-section-h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.OurTeam-section-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.OurTeam-section-list-items {
+    width: 270px;
+    height: 368px;
+    background-color: var(--white-text-color-background-color);
+    border-radius: 5px;
+    box-shadow: 0px 2px 30px -19px rgba(0,0,0,0.76);
+}
+
+.OurTeam-section-img-items {
+    height: 260px;
+}
+
+/*OurTeam*/
+/*footer*/
+
+footer {
+    background-color: var(--hero-section-footer-bacground-color);
+    height: 252px;
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-logo {
+    color: var(--white-text-color-background-color);
+    margin-bottom: 10px;
+}
+
+.footer-list {
+    width: 231px;
+    height: 81px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-list-items {
+    color: var(--white-text-color-background-color);
+    font-size: 14px;
+}
+
+/*footer*/
+
+/*</main>*/
+
