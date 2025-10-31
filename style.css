@@ -1,0 +1,432 @@
+:root {
+    --text-color:#212121;
+    --white-text-color-background-color:#FFFFFF;
+    --gray-text-color:#757575;
+    --span-buttonBackground-aHover-color:#2196F3;
+    --hero-section-footer-bacground-color:#2F303A;
+    --OurTeam-section-bacground-color:#F5F4FA;
+    --regular-customers-color: #AFB1B8;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+span {
+    color: var(--span-buttonBackground-aHover-color);
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+section:not(.OurTeam) {
+    margin-bottom: 100px;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*<header>*/
+
+header {
+    height: 80px;
+    border-bottom: 2px solid #cecece;
+    display: flex;
+}
+
+.header-container {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+h1, .footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    color: var(--text-color)
+} 
+
+.header-menu-list {
+    height: 40px;
+    width: 500px;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.header-menu-a-items {
+    height: 14px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header-svg-items {
+    width: 16px; 
+    height: 12px;
+}
+
+.header-menu-a-items:hover,.header-svg-items:hover {
+    color: var(--span-buttonBackground-aHover-color);
+}
+
+.header-svg-items:hover {
+    fill: var(--span-buttonBackground-aHover-color);
+}
+
+/*header*/
+/*main*/
+
+
+/*hero-section*/
+
+.hero {
+    background-image: url(./images/Img\ \(14\).png);
+    min-height: 600px;
+    margin: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section-h2 {
+    font-size: 44px;
+    color: var(--white-text-color-background-color);
+}
+
+.hero-section-button {
+    width: 216px;
+    height: 50px;
+    background-color: var(--span-buttonBackground-aHover-color);
+    color: var(--white-text-color-background-color);
+    font-size: 16px;
+    padding: auto;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/*hero-section*/
+
+/*features-section*/
+
+.features {
+    margin: 100px 0;
+}
+
+.features-section-container {
+    min-height: 248px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.features-section-item {
+    width: 270px;
+    height: 248px;
+}
+
+.features-section-items:nth-child(1):before {
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("./images/Group.png");
+    background-color: var(--OurTeam-section-bacground-color);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.features-section-items:nth-child(2):before {
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("./images/clock.png");
+    background-color: var(--OurTeam-section-bacground-color);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.features-section-items:nth-child(3):before {
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("./images/diagram.png");
+    background-color: var(--OurTeam-section-bacground-color);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.features-section-items:nth-child(4):before {
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image: url("./images/astronaut.png");
+    background-color: var(--OurTeam-section-bacground-color);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.features-section-list-litems-h3 {
+    order: 1;
+    width: 270px;
+}
+
+.features-section-div-p-litems {
+    color: var(--gray-text-color);
+    order: -1;
+    width: 270px;
+}
+
+/*features-section*/
+/*WhatDoWeDo-section*/
+
+.WhatDoWeDo-section-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.WhatDoWeDo-section-h2 {
+    margin: 0 auto;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.WhatDoWeDo-section-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.WhatDoWeDo-section-img-list-items {
+    width: 370px;
+    height: 294px;
+}
+
+/*WhatDoWeDo-section*/
+/*OurTeam*/
+
+.OurTeam {
+    background-color: var(--OurTeam-section-bacground-color);
+    min-height: 708px;
+    padding: 95px 0;
+}
+
+.OurTeam-section-container {
+    min-height: 428px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.OurTeam-section-h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.OurTeam-section-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.OurTeam-section-list-items {
+    width: 270px;
+    height: 368px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--white-text-color-background-color);
+    border-radius: 5px;
+    box-shadow: 0px 2px 30px -19px rgba(0,0,0,0.76);
+}
+
+.OurTeam-section-img-items {
+    width: 270px;
+    height: 260px;
+}
+
+/*OurTeam*/
+
+/*regular-customers*/
+
+.regular-customers {
+    max-width: 1170px;
+    min-height: 184px;
+    margin: 100px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.regular-customers-h2 {
+    font-size: 36px;
+}
+
+.regular-customers-list {
+    min-height: 92px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.regular-customers-list-items {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--regular-customers-color);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.regular-customers-list-items:hover {
+    border-color: var(--span-buttonBackground-aHover-color);
+}
+
+.customer {
+    fill: var(--regular-customers-color);
+}
+
+.customer:hover {
+    fill: var(--span-buttonBackground-aHover-color);
+}
+
+.first-customer {
+    height: 47px;
+}
+
+.second-customer {
+    height: 52px;
+}
+
+.third-customer {
+    height: 41px;
+}
+
+.fourth-customer {
+    height: 40px;
+}
+
+.fifth-customer {
+    height: 45px;
+}
+
+.sixth-customer {
+    height: 44px;
+}
+
+/*regular-customers*/
+
+/*</main>*/
+
+/*footer*/
+
+footer {
+    background-color: var(--hero-section-footer-bacground-color);
+    height: 252px;
+    padding-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    color: var(--white-text-color-background-color);
+    margin-bottom: 10px;
+}
+
+.footer-list {
+    width: 231px;
+    height: 81px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-list-items {
+    color: var(--white-text-color-background-color);
+    font-size: 14px;
+}
+
+/*footer*/
+
+/*social-networks*/
+
+.social-networks {
+    width: 206px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.social-networks-list {
+    width: 206px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.social-networks-h3 {
+    color: white;
+    height: 14px;
+    font-size: 14px;
+}
+
+.social-network-circle {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    background-color: rgba(255, 255, 255, 0.235)
+}
+
+.social-network-circle:hover {
+    background-color: #2196F3;
+}
+
+.social-network {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
+/*social-networks*/
