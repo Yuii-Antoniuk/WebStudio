@@ -30,12 +30,20 @@ li {
     display: inline-block;
 }
 
+ul {
+    padding: 0;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 section:not(.OurTeam) {
     margin-bottom: 100px;
 }
 
 .container {
-    width: 1170px;
+    max-width: 1170px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -227,11 +235,28 @@ h1, .footer-logo {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .WhatDoWeDo-section-img-list-items {
     width: 370px;
     height: 294px;
+}
+
+.WhatDoWeDo-p-list-items {
+    height: 70px;
+    width: 370px;
+    bottom: 0px;
+    position: absolute;
+    background-color: #2F303A;
+    opacity: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WhatDoWeDo-p-list-items>span {
+    color: var(--white-text-color-background-color);
 }
 
 /*WhatDoWeDo-section*/
