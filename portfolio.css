@@ -40,45 +40,53 @@ li {
 header {
     height: 80px;
     border-bottom: 2px solid #cecece;
-    margin: 0;
     display: flex;
-    align-items: center;
 }
 
 .header-container {
     display: flex;
-    flex-wrap: nowrap;
+    align-self: center;
     justify-content: space-between;
+    align-items: center;
+    height: 40px;
 }
 
 h1, .footer-logo {
     font-family: "Raleway", sans-serif;
-    display: inline-block;
-    vertical-align: middle;
     font-size: 26px;
+    color: var(--text-color)
 } 
 
 .header-menu-list {
+    height: 40px;
+    width: 500px;   
     display: flex;
-    width: 628px;   
-    justify-content: space-between; 
-}
-
-.header-menu-list-items {
-    display: inline;
-    vertical-align: middle;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
 }
 
 .header-menu-a-items {
+    height: 14px;
     text-decoration: none;
     color: var(--text-color);
 }
 
-.header-menu-a-items:hover {
+.header-svg-items {
+    width: 16px; 
+    height: 12px;
+}
+
+.header-menu-a-items:hover,.header-svg-items:hover {
     color: var(--span-buttonBackground-aHover-color);
 }
 
+.header-svg-items:hover {
+    fill: var(--span-buttonBackground-aHover-color);
+}
+
 /*header*/
+
 /*main*/
 
 section {
@@ -148,16 +156,15 @@ section {
 /*projects*/
 
 /*main*/
+
 /*footer*/
 
 footer {
     background-color: var(--hero-section-footer-bacground-color);
     height: 252px;
-    padding-left: 200px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .footer-logo {
@@ -179,5 +186,57 @@ footer {
     font-size: 14px;
 }
 
-/*footer*/
+.footer-div-form {
+    width: 570px;
+    height: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
+.footer-form-h3 {
+    color: var(--white-text-color-background-color);
+}
+
+.footer-form {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-form>input {
+    width: 358px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: var(--hero-section-footer-bacground-color);
+    color: var(--white-text-color-background-color);
+    padding-left: 2%;
+    border-radius: 4px;
+}
+
+.footer-form>button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--span-buttonBackground-aHover-color);
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-text-color-background-color);
+}
+
+.footer-form>button>svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--white-text-color-background-color);
+    margin-left: 5px;
+}
+
+/*footer*/
