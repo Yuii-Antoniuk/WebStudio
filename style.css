@@ -131,6 +131,149 @@ h1, .footer-logo {
     cursor: pointer;
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  opacity: 1;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 528px;
+  min-height: 581px;
+  padding: 15px;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-form {
+    width: 100%;
+    height: 466px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.btn-modal-close {
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    opacity: 0.6;
+    border-radius: 30px;
+    background-color: white;
+    margin: 5px 5px 0 0;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.btn-modal-close>svg {
+    width: 11px;
+    height: 11px;
+    fill: black;
+    opacity: 100;
+}
+
+.btn-modal-close>svg:hover {
+    fill: var(--span-buttonBackground-aHover-color);
+}
+
+.modal-h2 {
+    font-size: 20px;
+}
+
+.modal-input-lable-items {
+    width: 448px;
+    height: 58px;
+    display: inline-block;
+}
+
+.modal-input-lable-p {
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
+
+.modal-input-items {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+}
+
+.modal-input-items {
+    outline: none;
+}
+
+.input-box {
+    width: 448px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.input-box:focus-within {
+    border-color: var(--span-buttonBackground-aHover-color);
+}
+
+.modal-form-svg-items {
+    width: 18px;
+    height: 18px;
+    margin: 0 10px;
+}
+
+.input-box:focus-within .modal-form-svg-items {
+    fill: #2196F3;
+}
+
+.modal-textarea {
+    outline: 0;
+    width: 448px;
+    height: 120px;
+    resize: none;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding-left: 3px 0 0 3px;
+}
+
+.modal-textarea:focus {
+    border-color: var(--span-buttonBackground-aHover-color);
+}
+
+.modal-checkbox-label>a {
+    color: var(--span-buttonBackground-aHover-color);
+}
+
+.modal-sub-bnt {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 10px;
+    border: none;
+    color: white;
+    background-color: var(--span-buttonBackground-aHover-color);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
 /*hero-section*/
 
 /*features-section*/
@@ -392,9 +535,9 @@ h1, .footer-logo {
 footer {
     background-color: var(--hero-section-footer-bacground-color);
     height: 252px;
-    padding-left: 10%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .footer-logo {
@@ -414,6 +557,59 @@ footer {
 .footer-list-items {
     color: var(--white-text-color-background-color);
     font-size: 14px;
+}
+
+.footer-div-form {
+    width: 570px;
+    height: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-form-h3 {
+    color: var(--white-text-color-background-color);
+}
+
+.footer-form {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-form>input {
+    width: 358px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: var(--hero-section-footer-bacground-color);
+    color: var(--white-text-color-background-color);
+    padding-left: 2%;
+    border-radius: 4px;
+}
+
+.footer-form>button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--span-buttonBackground-aHover-color);
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-text-color-background-color);
+}
+
+.footer-form>button>svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--white-text-color-background-color);
+    margin-left: 5px;
 }
 
 /*footer*/
