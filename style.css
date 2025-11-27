@@ -8,6 +8,10 @@
     --regular-customers-color: #AFB1B8;
 }
 
+*:hover {
+    transition: 250ms;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: var(--text-color);
@@ -59,7 +63,7 @@ header {
 .header-container {
     display: flex;
     align-self: center;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 40px;
 }
@@ -70,9 +74,20 @@ h1, .footer-logo {
     color: var(--text-color)
 } 
 
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    width: 333px;
+    height: 16px;
+    justify-content: space-between;
+}
+
 .header-menu-list {
     height: 40px;
-    width: 500px;   
+    width: 286px;   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,17 +100,31 @@ h1, .footer-logo {
     color: var(--text-color);
 }
 
+.header-menu-list-items {
+    position: relative;
+}
+
+.header-menu-list-items:hover::after {
+  content: '';
+  position: absolute;
+  top: 260%;
+  left: 0;
+  right: 0;
+  border: 3px solid var(--span-buttonBackground-aHover-color);
+  border-radius: 5px;
+}
+
 .header-svg-items {
     width: 16px; 
     height: 12px;
 }
 
-.header-menu-a-items:hover,.header-svg-items:hover {
-    color: var(--span-buttonBackground-aHover-color);
+.header-menu-a-items:hover .header-svg-items {
+    fill: var(--span-buttonBackground-aHover-color);
 }
 
-.header-svg-items:hover {
-    fill: var(--span-buttonBackground-aHover-color);
+.header-menu-a-items:hover {
+    color: var(--span-buttonBackground-aHover-color);
 }
 
 /*header*/
@@ -450,7 +479,7 @@ h1, .footer-logo {
     fill: #AFB1B8 !important;
 }
 
-.OurTeam-social-network:hover {
+.social-network-circle .OurTeam-social-network:hover {
     fill: white !important;
 }
 
@@ -498,7 +527,7 @@ h1, .footer-logo {
     fill: var(--regular-customers-color);
 }
 
-.customer:hover {
+.regular-customers-list-items:hover .customer {
     fill: var(--span-buttonBackground-aHover-color);
 }
 
@@ -536,6 +565,7 @@ footer {
     background-color: var(--hero-section-footer-bacground-color);
     height: 252px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
