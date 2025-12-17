@@ -6,10 +6,12 @@
     --hero-section-footer-bacground-color:#2F303A;
     --OurTeam-section-bacground-color:#F5F4FA;
     --regular-customers-color: #AFB1B8;
+    --anim-time: 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
 }
 
-*:hover {
-    transition: 250ms;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -71,7 +73,11 @@ header {
 h1, .footer-logo {
     font-family: "Raleway", sans-serif;
     font-size: 26px;
-    color: var(--text-color)
+    color: var(--text-color);
+    animation-name: tada;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 } 
 
 nav {
@@ -100,30 +106,60 @@ nav {
     color: var(--text-color);
 }
 
+.active {
+    color: var(--span-buttonBackground-aHover-color);
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    top: 260%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--span-buttonBackground-aHover-color);
+    transform: scaleX(0);
+    transform-origin: left; 
+    transition: transform 0.4s ease;
+    animation: line-animate 1.5s ease infinite; 
+}
+
 .header-menu-list-items {
     position: relative;
 }
 
-.header-menu-list-items:hover::after {
-  content: '';
-  position: absolute;
-  top: 260%;
-  left: 0;
-  right: 0;
-  border: 3px solid var(--span-buttonBackground-aHover-color);
-  border-radius: 5px;
+.header-menu-list-items:not(.active)::after {
+    content: "";
+    position: absolute;
+    top: 260%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--span-buttonBackground-aHover-color);
+    transform: scaleX(0);
+    transform-origin: left; 
+    transition: transform 0.4s ease;
+}
+
+.header-menu-list-items:not(.active):hover::after {
+    transform: scaleX(1);
+    opacity: 1;
+    transform-origin: right;
 }
 
 .header-svg-items {
     width: 16px; 
     height: 12px;
+    transition: fill var(--anim-time), color var(--anim-time);
 }
 
 .header-menu-a-items:hover .header-svg-items {
     fill: var(--span-buttonBackground-aHover-color);
 }
 
-.header-menu-a-items:hover {
+.header-menu-a-items:not(.active):hover {
     color: var(--span-buttonBackground-aHover-color);
 }
 
@@ -158,6 +194,10 @@ nav {
     border: 0;
     border-radius: 3px;
     cursor: pointer;
+    animation-name: bnt-jump;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 .backdrop {
@@ -168,6 +208,7 @@ nav {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
+  transition: opacity 0.5s linear;
   opacity: 1;
 }
 
@@ -185,7 +226,6 @@ nav {
   padding: 15px;
   background-color: white;
   transform: translate(-50%, -50%);
-  padding: 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -212,6 +252,12 @@ nav {
     margin: 5px 5px 0 0;
     cursor: pointer;
     align-self: flex-end;
+    transition: transform 250ms ease-in-out 100ms;
+}
+
+.btn-modal-close:hover {
+    border: 2px solid var(--span-buttonBackground-aHover-color);
+    transform: rotate(180deg);
 }
 
 .btn-modal-close>svg {
@@ -221,7 +267,7 @@ nav {
     opacity: 100;
 }
 
-.btn-modal-close>svg:hover {
+.btn-modal-close:hover svg {
     fill: var(--span-buttonBackground-aHover-color);
 }
 
@@ -233,6 +279,11 @@ nav {
     width: 448px;
     height: 58px;
     display: inline-block;
+}
+
+.input-box:hover > .modal-input-lable-p
+.input-box:focus-within .modal-input-lable-p {
+    color: var(--span-buttonBackground-aHover-color);
 }
 
 .modal-input-lable-p {
@@ -258,9 +309,10 @@ nav {
     border-radius: 5px;
     display: flex;
     align-items: center;
+    transition: border-color 250ms ease;
 }
 
-.input-box:focus-within {
+.input-box:hover,.input-box:focus-within {
     border-color: var(--span-buttonBackground-aHover-color);
 }
 
@@ -268,10 +320,13 @@ nav {
     width: 18px;
     height: 18px;
     margin: 0 10px;
+    fill: black;
+    transition: fill 250ms ease;
 }
 
+.input-box:hover .modal-form-svg-items,
 .input-box:focus-within .modal-form-svg-items {
-    fill: #2196F3;
+    fill: var(--span-buttonBackground-aHover-color);
 }
 
 .modal-textarea {
@@ -281,10 +336,15 @@ nav {
     resize: none;
     border: 2px solid rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    padding-left: 3px 0 0 3px;
+    padding: 5px 0 0 5px;
+    transition: border-color var(--anim-time);
 }
 
 .modal-textarea:focus {
+    border-color: var(--span-buttonBackground-aHover-color);
+}
+
+.modal-textarea:hover {
     border-color: var(--span-buttonBackground-aHover-color);
 }
 
@@ -324,10 +384,28 @@ nav {
     height: 248px;
 }
 
+.first {
+    animation: shadow-change 1s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+.second {
+    animation: shadow-change 1s ease-in-out infinite;
+}
+
+.third {
+    animation: shadow-change 1s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+.fourth {
+    animation: shadow-change 1s ease-in-out infinite;
+}
+
 .features-section-items:nth-child(1):before {
     content: '';
     display: block;
-    width: 270px;
+    width: 280px;
     height: 120px;
     background-image: url("./images/Group.png");
     background-color: var(--OurTeam-section-bacground-color);
@@ -340,7 +418,7 @@ nav {
 .features-section-items:nth-child(2):before {
     content: '';
     display: block;
-    width: 270px;
+    width: 280px;
     height: 120px;
     background-image: url("./images/clock.png");
     background-color: var(--OurTeam-section-bacground-color);
@@ -353,7 +431,7 @@ nav {
 .features-section-items:nth-child(3):before {
     content: '';
     display: block;
-    width: 270px;
+    width: 280px;
     height: 120px;
     background-image: url("./images/diagram.png");
     background-color: var(--OurTeam-section-bacground-color);
@@ -366,7 +444,7 @@ nav {
 .features-section-items:nth-child(4):before {
     content: '';
     display: block;
-    width: 270px;
+    width: 280px;
     height: 120px;
     background-image: url("./images/astronaut.png");
     background-color: var(--OurTeam-section-bacground-color);
@@ -376,12 +454,14 @@ nav {
     margin-bottom: 30px;
 }
 
-.features-section-list-litems-h3 {
+.features-section-div-h3-litems {
+    margin-left: 10px;
     order: 1;
     width: 270px;
 }
 
 .features-section-div-p-litems {
+    margin-left: 10px;
     color: var(--gray-text-color);
     order: -1;
     width: 270px;
@@ -410,9 +490,68 @@ nav {
     position: relative;
 }
 
+.first-img {
+    animation-name: Y-move;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.first-p {
+    animation-name: Y-move;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.second-img {
+    animation-name: Y-move;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 3s;
+}
+
+.second-p {
+    animation-name: Y-move;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 3s; 
+}
+
+.third-img {
+    animation-name: Y-move;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 6s;
+}
+
+.third-p {
+    animation-name: Y-move;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 6s; 
+}
+
 .WhatDoWeDo-section-img-list-items {
     width: 370px;
     height: 294px;
+    display: block;
+}
+
+.img-box {
+    width: 370px;
+    height: 294px;
+    position: relative;
 }
 
 .WhatDoWeDo-p-list-items {
@@ -479,7 +618,7 @@ nav {
     fill: #AFB1B8 !important;
 }
 
-.social-network-circle .OurTeam-social-network:hover {
+.social-network-circle:hover .OurTeam-social-network {
     fill: white !important;
 }
 
@@ -521,10 +660,12 @@ nav {
 
 .regular-customers-list-items:hover {
     border-color: var(--span-buttonBackground-aHover-color);
+    transition: var(--anim-time);
 }
 
 .customer {
     fill: var(--regular-customers-color);
+    transition: var(--anim-time);
 }
 
 .regular-customers-list-items:hover .customer {
@@ -677,7 +818,8 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 22px;
-    background-color: rgba(255, 255, 255, 0.235)
+    background-color: rgba(255, 255, 255, 0.235);
+    transition: var(--anim-time);
 }
 
 .social-network-circle:hover {
