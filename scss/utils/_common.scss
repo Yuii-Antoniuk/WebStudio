@@ -1,0 +1,46 @@
+// Common styles for all pages
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: $text-color;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+span {
+    color: $span-buttonBackground-aHover-color;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul {
+    padding: 0;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section:not(.OurTeam) {
+    margin-bottom: 100px;
+}
+
+.container {
+    max-width: $container-max-width;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $container-padding;
+}

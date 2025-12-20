@@ -1,0 +1,32 @@
+.hero {
+    background-image: url(./images/Img\ \(14\).png);
+    height: 600px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    outline: auto;
+}
+
+.hero-section-h2 {
+    font-size: 44px;
+    color: $white-text-color-background-color;
+}
+
+.hero-section-button {
+    width: 216px;
+    height: 50px;
+    background-color: $span-buttonBackground-aHover-color;
+    color: $white-text-color-background-color;
+    font-size: 16px;
+    padding: auto;
+    border: 0;
+    border-radius: $radius-small;
+    cursor: pointer;
+    animation-name: bnt-jump;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}

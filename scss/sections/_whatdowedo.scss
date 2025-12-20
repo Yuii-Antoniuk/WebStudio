@@ -1,0 +1,101 @@
+// What Do We Do section styles
+
+.WhatDoWeDo-section-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.WhatDoWeDo-section-h2 {
+    margin: 0 auto;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.WhatDoWeDo-section-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.first-img {
+    animation-name: Y-move;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.first-p {
+    animation-name: Y-move;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.second-img {
+    animation-name: Y-move;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 3s;
+}
+
+.second-p {
+    animation-name: Y-move;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 3s;
+}
+
+.third-img {
+    animation-name: Y-move;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 6s;
+}
+
+.third-p {
+    animation-name: Y-move;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 6s;
+}
+
+.WhatDoWeDo-section-img-list-items {
+    width: 370px;
+    height: 294px;
+    display: block;
+}
+
+.img-box {
+    width: 370px;
+    height: 294px;
+    position: relative;
+}
+
+.WhatDoWeDo-p-list-items {
+    height: 70px;
+    width: 370px;
+    bottom: 0px;
+    position: absolute;
+    background-color: $hero-section-footer-bacground-color;
+    opacity: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &>span {
+        color: $white-text-color-background-color;
+    }
+}

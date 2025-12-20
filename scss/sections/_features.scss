@@ -1,0 +1,105 @@
+// Features section styles
+
+.features {
+    width: 100%;
+    height: 248px;
+    margin: 100px 0;
+}
+
+.features-section-container {
+    min-height: 248px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.features-section-item {
+    width: 270px;
+    height: 248px;
+}
+
+.first {
+    animation: shadow-change 1s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+.second {
+    animation: shadow-change 1s ease-in-out infinite;
+}
+
+.third {
+    animation: shadow-change 1s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+.fourth {
+    animation: shadow-change 1s ease-in-out infinite;
+}
+
+.features-section-items {
+    &:nth-child(1)::before {
+        content: '';
+        display: block;
+        width: 280px;
+        height: 120px;
+        background-image: url("./images/Group.png");
+        background-color: $OurTeam-section-bacground-color;
+        background-size: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 30px;
+    }
+
+    &:nth-child(2)::before {
+        content: '';
+        display: block;
+        width: 280px;
+        height: 120px;
+        background-image: url("./images/clock.png");
+        background-color: $OurTeam-section-bacground-color;
+        background-size: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 30px;
+    }
+
+    &:nth-child(3)::before {
+        content: '';
+        display: block;
+        width: 280px;
+        height: 120px;
+        background-image: url("./images/diagram.png");
+        background-color: $OurTeam-section-bacground-color;
+        background-size: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 30px;
+    }
+
+    &:nth-child(4)::before {
+        content: '';
+        display: block;
+        width: 280px;
+        height: 120px;
+        background-image: url("./images/astronaut.png");
+        background-color: $OurTeam-section-bacground-color;
+        background-size: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 30px;
+    }
+}
+
+.features-section-div-h3-litems {
+    margin-left: 10px;
+    order: 1;
+    width: 270px;
+}
+
+.features-section-div-p-litems {
+    margin-left: 10px;
+    color: $gray-text-color;
+    order: -1;
+    width: 270px;
+}

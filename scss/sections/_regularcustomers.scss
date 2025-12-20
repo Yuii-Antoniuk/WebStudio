@@ -1,0 +1,70 @@
+// Regular Customers section styles
+
+.regular-customers {
+    max-width: $container-max-width;
+    min-height: 184px;
+    margin: 100px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.regular-customers-h2 {
+    font-size: 36px;
+}
+
+.regular-customers-list {
+    min-height: 92px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.regular-customers-list-items {
+    width: 170px;
+    height: 92px;
+    border: 1px solid $regular-customers-color;
+    border-radius: $radius-small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: $anim-time;
+
+    &:hover {
+        border-color: $span-buttonBackground-aHover-color;
+
+        .customer {
+            fill: $span-buttonBackground-aHover-color;
+        }
+    }
+}
+
+.customer {
+    fill: $regular-customers-color;
+    transition: $anim-time;
+}
+
+.first-customer {
+    height: 47px;
+}
+
+.second-customer {
+    height: 52px;
+}
+
+.third-customer {
+    height: 41px;
+}
+
+.fourth-customer {
+    height: 40px;
+}
+
+.fifth-customer {
+    height: 45px;
+}
+
+.sixth-customer {
+    height: 44px;
+}

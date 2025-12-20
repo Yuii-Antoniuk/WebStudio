@@ -1,0 +1,46 @@
+// Social Networks section styles
+
+.social-networks {
+    width: 206px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.social-networks-list {
+    width: 206px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.social-networks-h3 {
+    color: white;
+    height: 14px;
+    font-size: 14px;
+}
+
+.social-network-circle {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: $radius-circle;
+    background-color: $footer-circle-bg;
+    transition: $anim-time;
+
+    &:hover {
+        background-color: $span-buttonBackground-aHover-color;
+    }
+}
+
+.social-network {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}

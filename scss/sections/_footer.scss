@@ -1,0 +1,82 @@
+// Footer section styles
+
+footer {
+    background-color: $hero-section-footer-bacground-color;
+    height: 252px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-logo {
+    color: $white-text-color-background-color;
+    margin-bottom: 10px;
+}
+
+.footer-list {
+    width: 231px;
+    height: 81px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-list-items {
+    color: $white-text-color-background-color;
+    font-size: 14px;
+}
+
+.footer-div-form {
+    width: 570px;
+    height: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-form-h3 {
+    color: $white-text-color-background-color;
+}
+
+.footer-form {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &>input {
+        width: 358px;
+        height: 50px;
+        border: none;
+        outline: none;
+        border: 1px solid $light-border-color;
+        background-color: $hero-section-footer-bacground-color;
+        color: $white-text-color-background-color;
+        padding-left: 2%;
+        border-radius: $radius-medium;
+    }
+
+    &>button {
+        width: 200px;
+        height: 50px;
+        background-color: $span-buttonBackground-aHover-color;
+        border-radius: $radius-medium;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white-text-color-background-color;
+
+        &>svg {
+            width: 24px;
+            height: 24px;
+            fill: $white-text-color-background-color;
+            margin-left: 5px;
+        }
+    }
+}

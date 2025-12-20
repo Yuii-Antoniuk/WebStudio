@@ -1,0 +1,25 @@
+// Colors
+$text-color: #212121;
+$white-text-color-background-color: #FFFFFF;
+$gray-text-color: #757575;
+$span-buttonBackground-aHover-color: #2196F3;
+$hero-section-footer-bacground-color: #2F303A;
+$OurTeam-section-bacground-color: #F5F4FA;
+$regular-customers-color: #AFB1B8;
+$border-color: #cecece;
+$overlay-color: rgba(33, 150, 243, 90%);
+$modal-border-color: rgba(0, 0, 0, 0.5);
+$light-border-color: rgba(255, 255, 255, 0.3);
+$footer-circle-bg: rgba(255, 255, 255, 0.235);
+
+// Animations
+$anim-time: 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+$anim-time-full: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+
+// Z-indexes
+$z-modal: 1000;
+
+// Border radius
+$radius-small: 3px;
+$radius-medium: 5px;
+$radius-circle: 22px;

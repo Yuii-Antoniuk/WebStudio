@@ -1,0 +1,50 @@
+// Our Team section styles
+
+.OurTeam {
+    background-color: $OurTeam-section-bacground-color;
+    min-height: 708px;
+    padding: 95px 0;
+}
+
+.OurTeam-section-container {
+    min-height: 428px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.OurTeam-section-h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.OurTeam-section-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.OurTeam-section-list-items {
+    width: 270px;
+    height: 368px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white-text-color-background-color;
+    border-radius: $radius-medium;
+    box-shadow: 0px 2px 30px -19px rgba(0, 0, 0, 0.76);
+}
+
+.OurTeam-section-img-items {
+    width: 270px;
+    height: 260px;
+}
+
+.OurTeam-social-network {
+    fill: $regular-customers-color !important;
+}
+
+.social-network-circle:hover .OurTeam-social-network {
+    fill: white !important;
+}
