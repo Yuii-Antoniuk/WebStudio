@@ -182,7 +182,6 @@ nav {
 }
 
 .features {
-  width: 100%;
   margin: 100px 0;
 }
 
@@ -762,7 +761,7 @@ footer {
   cursor: pointer;
 }
 
-section {
+.portfolio-section {
   width: 1170px;
   height: 1360px;
   margin: 50px auto;
