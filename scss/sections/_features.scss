@@ -6,7 +6,7 @@
     margin: 100px 0;
 }
 
-.features-section-container {
+.features__container {
     min-height: 248px;
     display: flex;
     flex-direction: row;
@@ -37,7 +37,7 @@
     animation: shadow-change 1s ease-in-out infinite;
 }
 
-.features-section-items {
+.features__items {
     &:nth-child(1)::before {
         content: '';
         display: block;
@@ -91,13 +91,13 @@
     }
 }
 
-.features-section-div-h3-litems {
+.features__h3 {
     margin-left: 10px;
     order: 1;
     width: 270px;
 }
 
-.features-section-div-p-litems {
+.features__p {
     margin-left: 10px;
     color: $gray-text-color;
     order: -1;

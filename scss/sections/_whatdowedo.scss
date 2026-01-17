@@ -1,26 +1,27 @@
 // What Do We Do section styles
 
-.WhatDoWeDo-section-container {
+.WhatDoWeDo__container {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.WhatDoWeDo-section-h2 {
+.WhatDoWeDo__h2 {
     margin: 0 auto;
     font-size: 42px;
     margin-bottom: 20px;
 }
 
-.WhatDoWeDo-section-list {
+.WhatDoWeDo__list {
     width: 100%;
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 
-.first-img {
+.first__img,
+.first__p {
     animation-name: Y-move;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
@@ -28,15 +29,8 @@
     animation-direction: alternate;
 }
 
-.first-p {
-    animation-name: Y-move;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-.second-img {
+.second__img,
+.second__p {
     animation-name: Y-move;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
@@ -45,16 +39,8 @@
     animation-delay: 3s;
 }
 
-.second-p {
-    animation-name: Y-move;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-delay: 3s;
-}
-
-.third-img {
+.third__img,
+.third__p {
     animation-name: Y-move;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
@@ -63,28 +49,19 @@
     animation-delay: 6s;
 }
 
-.third-p {
-    animation-name: Y-move;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-delay: 6s;
-}
-
-.WhatDoWeDo-section-img-list-items {
+.WhatDoWeDo__img {
     width: 370px;
     height: 294px;
     display: block;
 }
 
-.img-box {
+.img__box {
     width: 370px;
     height: 294px;
     position: relative;
 }
 
-.WhatDoWeDo-p-list-items {
+.WhatDoWeDo__p {
     height: 70px;
     width: 370px;
     bottom: 0px;

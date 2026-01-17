@@ -6,7 +6,7 @@
     padding: 95px 0;
 }
 
-.OurTeam-section-container {
+.OurTeam__container {
     min-height: 428px;
     display: flex;
     flex-direction: column;
@@ -14,17 +14,17 @@
     text-align: center;
 }
 
-.OurTeam-section-h2 {
+.OurTeam__h2 {
     font-size: 36px;
     margin-bottom: 50px;
 }
 
-.OurTeam-section-list {
+.OurTeam__list {
     display: flex;
     justify-content: space-between;
 }
 
-.OurTeam-section-list-items {
+.OurTeam__li {
     width: 270px;
     height: 368px;
     display: flex;
@@ -36,15 +36,15 @@
     box-shadow: 0px 2px 30px -19px rgba(0, 0, 0, 0.76);
 }
 
-.OurTeam-section-img-items {
+.OurTeam__img {
     width: 270px;
     height: 260px;
 }
 
-.OurTeam-social-network {
+.OurTeam__socialNetwork {
     fill: $regular-customers-color !important;
 }
 
-.social-network-circle:hover .OurTeam-social-network {
+.socialNetwork__circle:hover .OurTeam__social__network {
     fill: white !important;
 }

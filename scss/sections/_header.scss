@@ -4,7 +4,7 @@ header {
     display: flex;
 }
 
-.header-container {
+.header__container {
     display: flex;
     align-self: center;
     justify-content: space-around;
@@ -12,7 +12,7 @@ header {
     height: 40px;
 }
 
-h1, .footer-logo {
+h1, .footer__logo {
     font-family: "Raleway", sans-serif;
     font-size: 26px;
     color: $text-color;
@@ -27,13 +27,13 @@ nav {
     justify-content: space-between;
 }
 
-.info {
+.info__list {
     width: 333px;
     height: 16px;
     justify-content: space-between;
 }
 
-.header-menu-list {
+.nav__list {
     height: 40px;
     width: 286px;
     display: flex;
@@ -42,7 +42,8 @@ nav {
     padding: 0;
 }
 
-.header-menu-a-items {
+.nav__link,
+.info__link {
     height: 14px;
     text-decoration: none;
     color: $text-color;
@@ -60,7 +61,7 @@ nav {
     }
 }
 
-.active {
+.nav__link-active {
     color: $span-buttonBackground-aHover-color;
 
     &::after {
@@ -79,7 +80,8 @@ nav {
     }
 }
 
-.header-menu-list-items {
+.nav__item,
+.info__item {
     position: relative;
 
     &:not(.active)::after {

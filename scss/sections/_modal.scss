@@ -31,7 +31,7 @@
     align-items: center;
 }
 
-.modal-form {
+.modal__form {
     width: 100%;
     height: 466px;
     display: flex;
@@ -41,7 +41,7 @@
     margin-bottom: 10px;
 }
 
-.btn-modal-close {
+.modal__bnt-close {
     width: 30px;
     height: 30px;
     border: 2px solid $modal-border-color;
@@ -70,17 +70,17 @@
     }
 }
 
-.modal-h2 {
+.modal__h2 {
     font-size: 20px;
 }
 
-.modal-input-lable-items {
+.modal__label {
     width: 448px;
     height: 58px;
     display: inline-block;
 }
 
-.input-box {
+.input__box {
     width: 448px;
     border: 2px solid $modal-border-color;
     border-radius: $radius-medium;
@@ -108,14 +108,15 @@
     margin-bottom: 5px;
 }
 
-.modal-input-items {
+.modal__input,
+.modal__textarea {
     width: 100%;
     height: 40px;
     outline: none;
     border: none;
 }
 
-.modal-form-svg-items {
+.input__svg {
     width: 18px;
     height: 18px;
     margin: 0 10px;
@@ -123,7 +124,7 @@
     transition: fill 250ms ease;
 }
 
-.modal-textarea {
+.modal__textarea {
     outline: 0;
     width: 448px;
     height: 120px;
@@ -139,13 +140,13 @@
     }
 }
 
-.modal-checkbox-label {
+.modal__label-checkbox {
     &>a {
         color: $span-buttonBackground-aHover-color;
     }
 }
 
-.modal-sub-bnt {
+.modal__bnt-sub {
     width: 200px;
     height: 50px;
     margin-bottom: 10px;

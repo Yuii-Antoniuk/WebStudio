@@ -1,6 +1,6 @@
 // Regular Customers section styles
 
-.regular-customers {
+.regularCustomers {
     max-width: $container-max-width;
     min-height: 184px;
     margin: 100px auto;
@@ -11,17 +11,17 @@
     flex-wrap: wrap;
 }
 
-.regular-customers-h2 {
+.regularCustomers__h2 {
     font-size: 36px;
 }
 
-.regular-customers-list {
+.regularCustomers__list {
     min-height: 92px;
     display: flex;
     justify-content: space-between;
 }
 
-.regular-customers-list-items {
+.regularCustomers__li {
     width: 170px;
     height: 92px;
     border: 1px solid $regular-customers-color;
@@ -45,26 +45,26 @@
     transition: $anim-time;
 }
 
-.first-customer {
+.first__customer {
     height: 47px;
 }
 
-.second-customer {
+.second__customer {
     height: 52px;
 }
 
-.third-customer {
+.third__customer {
     height: 41px;
 }
 
-.fourth-customer {
+.fourth__customer {
     height: 40px;
 }
 
-.fifth-customer {
+.fifth__customer {
     height: 45px;
 }
 
-.sixth-customer {
+.sixth__customer {
     height: 44px;
 }

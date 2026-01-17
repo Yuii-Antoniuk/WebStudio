@@ -8,7 +8,7 @@
     margin-left: 10%;
 }
 
-.social-networks-list {
+.socialNetworks__list {
     width: 206px;
     height: 44px;
     display: flex;
@@ -18,13 +18,13 @@
     padding: 0 !important;
 }
 
-.social-networks-h3 {
+.socialNetworks__h3 {
     color: white;
     height: 14px;
     font-size: 14px;
 }
 
-.social-network-circle {
+.socialNetwork__circle {
     width: 44px;
     height: 44px;
     display: flex;
@@ -39,7 +39,7 @@
     }
 }
 
-.social-network {
+.socialNetwork {
     width: 20px;
     height: 20px;
     fill: white;
