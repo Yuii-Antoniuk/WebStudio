@@ -30,6 +30,7 @@ nav {
 .info__list {
     width: 333px;
     height: 16px;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -105,7 +106,7 @@ nav {
     }
 }
 
-.header-svg-items {
+.info__svg {
     width: 16px;
     height: 12px;
     transition: fill $anim-time, color $anim-time;

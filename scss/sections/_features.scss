@@ -2,7 +2,7 @@
 
 .features {
     width: 100%;
-    height: 248px;
+    min-height: 248px;
     margin: 100px 0;
 }
 
@@ -14,7 +14,7 @@
     flex-wrap: wrap;
 }
 
-.features-section-item {
+.features__items {
     width: 270px;
     height: 248px;
 }
@@ -41,9 +41,9 @@
     &:nth-child(1)::before {
         content: '';
         display: block;
-        width: 280px;
+        width: 100%;
         height: 120px;
-        background-image: url("./images/Group.png");
+        background-image: url("/images/Group.png");
         background-color: $OurTeam-section-bacground-color;
         background-size: 70px;
         background-repeat: no-repeat;
@@ -54,9 +54,9 @@
     &:nth-child(2)::before {
         content: '';
         display: block;
-        width: 280px;
+        width: 100%;
         height: 120px;
-        background-image: url("./images/clock.png");
+        background-image: url("/images/clock.png");
         background-color: $OurTeam-section-bacground-color;
         background-size: 70px;
         background-repeat: no-repeat;
@@ -67,9 +67,9 @@
     &:nth-child(3)::before {
         content: '';
         display: block;
-        width: 280px;
+        width: 100%;
         height: 120px;
-        background-image: url("./images/diagram.png");
+        background-image: url("/images/diagram.png");
         background-color: $OurTeam-section-bacground-color;
         background-size: 70px;
         background-repeat: no-repeat;
@@ -80,9 +80,9 @@
     &:nth-child(4)::before {
         content: '';
         display: block;
-        width: 280px;
+        width: 100%;
         height: 120px;
-        background-image: url("./images/astronaut.png");
+        background-image: url("/images/astronaut.png");
         background-color: $OurTeam-section-bacground-color;
         background-size: 70px;
         background-repeat: no-repeat;

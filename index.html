@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link
+    <thead
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
@@ -35,19 +35,19 @@
         <!--font-Raleway-->
         <nav>
           <ul class="nav__list">
-            <li class="nav__items">
+            <li class="nav__item">
               <a class="nav__link nav__link-active" href="index.html">Студія</a>
             </li>
-            <li class="nav__items">
+            <li class="nav__item">
               <a class="nav__link" href="portfolio.html">Портфоліо</a>
             </li>
-            <li class="nav__items">
+            <li class="nav__item">
               <a class="nav__link" href="#footer">Контакти</a>
             </li>
           </ul>
         </nav>
           <ul class="info__list">
-            <li class="info__items">
+            <li class="info__item">
               <a href="" class="info__link">
                 <svg class="info__svg">
                   <use href="./svg/symbol-defs.svg#icon-envelope-hover"></use>
@@ -55,7 +55,7 @@
                 @devstudio.com
               </a>
             </li>
-            <li class="info__items">
+            <li class="info__item">
               <a href="" class="info__link">
                 <svg class="info__svg">
                   <use href="./svg/symbol-defs.svg#icon-mobile2"></use>
@@ -104,7 +104,7 @@
                   Ім'я
                   </p>
                   <div class="input__box">
-                  <svg class="modal__svg">
+                  <svg class="input__svg">
                     <use href="./svg/symbol-defs.svg#icon-Vector-2"></use>
                   </svg>
                   <input type="tel" required minlength="3" maxlength="15" class="modal__input">
@@ -116,7 +116,7 @@
                   Ім'я
                   </p>
                   <div class="input__box">
-                  <svg class="modal__svg">
+                  <svg class="input__svg">
                     <use href="./svg/symbol-defs.svg#icon-Vector-3"></use>
                   </svg>
                   <input type="email" required minlength="3" maxlength="15" class="modal__input">
@@ -168,7 +168,7 @@
             </p>
           </div>
 
-          <div class="features-section-items fourth">
+          <div class="features__items fourth">
             <h3 class="features__h3">
               СУЧАСНІ ТЕХНОЛОГІЇ
             </h3>
@@ -201,7 +201,7 @@
               <img
                 src="./images/box 2.jpg"
                 alt="img"
-                class="WhatDoWeDo__img"
+                class="WhatDoWeDo__img second__img"
               />
               <p class="WhatDoWeDo__p second__p">
                 <span>Мобільні додатки</span>
@@ -211,7 +211,7 @@
               <img
                 src="./images/img (4) (2).jpg"
                 alt="img"
-                class="WhatDoWeDo__img-list-items third__img"
+                class="WhatDoWeDo__img third__img"
               />
               <p class="WhatDoWeDo__p third__p">
                 <span>Дизайнерські рішення</span>
@@ -226,7 +226,7 @@
           <h2 class="OurTeam__h2">Наша команда</h2>
           <ul class="OurTeam__list">
 
-            <li class="OurTeam__list">
+            <li class="OurTeam__li">
               <img
                 src="./images/img (1) (1).jpg"
                 alt="img"
@@ -235,7 +235,7 @@
               <h3 class="OurTeam__h3">Ігор Дем'яненко</h3>
               <p class="OurTeam__p">Product Designer</p>
               <ul class="socialNetworks__list">
-                <li class=".socialNetwork__circle">
+                <li class="socialNetwork__circle">
                   <a href="">
                     <svg class="socialNetwork OurTeam__socialNetwork">
                       <use href="./svg/symbol-defs.svg#icon-instagram-2"></use>
@@ -249,14 +249,14 @@
                     </svg>
                   </a>
                 </li>
-                <li class=".socialNetwork__circle">
+                <li class="socialNetwork__circle">
                   <a href="">
                     <svg class="socialNetwork OurTeam__socialNetwork">
                       <use href="./svg/symbol-defs.svg#icon-facebook-1"></use>
                     </svg>
                   </a>
                 </li>
-                <li class=".socialNetwork__circle">
+                <li class="socialNetwork__circle">
                   <a href="">
                     <svg class="socialNetwork OurTeam__socialNetwork">
                       <use href="./svg/symbol-defs.svg#icon-linkedin-1"></use>
@@ -314,7 +314,7 @@
               />
               <h3 class="OurTeam__h3">Микола Тарасов</h3>
               <p class="OurTeam__p">Marketing</p>
-              <ul class="socialnNetworks__list">
+              <ul class="socialNetworks__list">
                 <li class="socialNetwork__circle">
                   <a href="">
                     <svg class="socialNetwork OurTeam__socialNetwork">
@@ -398,7 +398,7 @@
             </svg>
           </li>
           <li class="regularCustomers__li">
-            <svg class="second__сustomer customer">
+            <svg class="second__customer customer">
               <use href="./svg/symbol-defs.svg#icon-group-1"></use>
             </svg>
           </li>
@@ -412,24 +412,25 @@
               <use href="./svg/symbol-defs.svg#icon-group-3"></use>
             </svg>
           </li>
-          <li class="regularСustomers__li">
+          <li class="regularCustomers__li">
             <svg class="fifth__customer customer">
               <use href="./svg/symbol-defs.svg#icon-group-4"></use>
             </svg>
           </li>
-          <a href="">
-            <li class="regularСustomers__li">
+            <li class="regularCustomers__li">
+             <a href="">
               <svg class="sixth__customer customer">
                 <use href="./svg/symbol-defs.svg#icon-group-5"></use>
               </svg>
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </section>
     </main>
 
     <footer>
-      <div>
+      <div class="container footer__container">
+      <div class="footer__div-main">
         <h2 class="footer__logo"><span>Web</span>Studio</h2>
         <!--font-Raleway-->
         <ul class="footer__list">
@@ -444,11 +445,11 @@
           </li>
         </ul>
       </div>
-      <div class="socialNetworks">
-        <h3 class="socialNetworks__h3">приєднуйтесь</h3>
+      <div class="socialNetworks footer__div-socialNetworks">
+        <h3 class="socialNetworks__h3" style="text-align: center;">приєднуйтесь</h3>
         <br /><br />
         <ul style="margin-top: 60px" class="socialNetworks__list">
-          <li class="social-network-circle">
+          <li class="socialNetwork__circle">
             <a href="">
               <svg class="socialNetwork">
                 <use href="./svg/symbol-defs.svg#icon-instagram-2"></use>
@@ -478,7 +479,7 @@
           </li>
         </ul>
       </div>
-      <div class="footerForm">
+      <div class="footer__div-form">
         <h3 class="footerForm__h3">Підпишіться на розсилку</h3>
         <form class="footer__form">
           <input required type="email" placeholder="E-mail">
@@ -489,6 +490,7 @@
         </form>
       </div>
       <a name="footer"></a>
+      </div>
     </footer>
     <script src="modal.js"></script>
   </body>

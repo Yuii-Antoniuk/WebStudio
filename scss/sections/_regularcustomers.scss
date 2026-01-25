@@ -1,13 +1,14 @@
 // Regular Customers section styles
 
 .regularCustomers {
-    max-width: $container-max-width;
+    max-width: 1170px;
     min-height: 184px;
     margin: 100px auto;
+    padding: 0 15px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -19,6 +20,7 @@
     min-height: 92px;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .regularCustomers__li {
@@ -67,4 +69,5 @@
 
 .sixth__customer {
     height: 44px;
+    width: 170px;
 }

@@ -1,158 +1,164 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: $z-modal;
-    transition: opacity 0.5s linear;
-    opacity: 1;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: $z-modal;
+  opacity: 1;
+  transition: opacity 250ms ease;
 
-    &.is-hidden {
-        opacity: 0;
-        pointer-events: none;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 528px;
-    min-height: 581px;
-    padding: 15px;
-    background-color: white;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  width: 528px;
+  min-height: 581px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: $radius-medium;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  position: relative;
 }
 
 .modal__form {
-    width: 100%;
-    height: 466px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .modal__bnt-close {
-    width: 30px;
-    height: 30px;
-    border: 2px solid $modal-border-color;
-    opacity: 0.6;
-    border-radius: $radius-circle;
-    background-color: white;
-    margin: 5px 5px 0 0;
-    cursor: pointer;
-    align-self: flex-end;
-    transition: transform 250ms ease-in-out 100ms;
+  width: 30px;
+  height: 30px;
+  border: 2px solid $modal-border-color;
+  border-radius: $radius-circle;
+  background-color: #fff;
+  opacity: 0.6;
+  cursor: pointer;
 
-    &:hover {
-        border: 2px solid $span-buttonBackground-aHover-color;
-        transform: rotate(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-        svg {
-            fill: $span-buttonBackground-aHover-color;
-        }
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  transition: transform 250ms ease, border-color 250ms ease;
+
+  &:hover {
+    border-color: $span-buttonBackground-aHover-color;
+    transform: rotate(180deg);
+
+    svg {
+      fill: $span-buttonBackground-aHover-color;
     }
+  }
 
-    &>svg {
-        width: 11px;
-        height: 11px;
-        fill: black;
-        opacity: 100;
-    }
+  svg {
+    width: 11px;
+    height: 11px;
+    fill: #000;
+  }
 }
 
 .modal__h2 {
-    font-size: 20px;
+  font-size: 20px;
+  margin-bottom: 12px;
 }
 
 .modal__label {
-    width: 448px;
-    height: 58px;
-    display: inline-block;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modal__p {
+  font-size: 12px;
+  color: $modal-border-color;
+  text-align: left;
 }
 
 .input__box {
-    width: 448px;
-    border: 2px solid $modal-border-color;
-    border-radius: $radius-medium;
-    display: flex;
-    align-items: center;
-    transition: border-color 250ms ease;
+  width: 100%;
+  height: 40px;
+  border: 2px solid $modal-border-color;
+  border-radius: $radius-medium;
+  display: flex;
+  align-items: center;
+  transition: border-color 250ms ease;
 
-    &:hover,
-    &:focus-within {
-        border-color: $span-buttonBackground-aHover-color;
+  &:hover,
+  &:focus-within {
+    border-color: $span-buttonBackground-aHover-color;
 
-        .modal-input-lable-p {
-            color: $span-buttonBackground-aHover-color;
-        }
-
-        .modal-form-svg-items {
-            fill: $span-buttonBackground-aHover-color;
-        }
+    .modal__p {
+      color: $span-buttonBackground-aHover-color;
     }
+
+    .input__svg {
+      fill: $span-buttonBackground-aHover-color;
+    }
+  }
 }
 
-.modal-input-lable-p {
-    text-align: left;
-    color: $modal-border-color;
-    margin-bottom: 5px;
-}
-
-.modal__input,
-.modal__textarea {
-    width: 100%;
-    height: 40px;
-    outline: none;
-    border: none;
+.modal__input {
+  width: 448px;
+  height: 100%;
+  border: none;
+  outline: none;
 }
 
 .input__svg {
-    width: 18px;
-    height: 18px;
-    margin: 0 10px;
-    fill: black;
-    transition: fill 250ms ease;
+  width: 18px;
+  height: 18px;
+  margin: 0 10px;
+  fill: #000;
+  transition: fill 250ms ease;
 }
 
 .modal__textarea {
-    outline: 0;
-    width: 448px;
-    height: 120px;
-    resize: none;
-    border: 2px solid $modal-border-color;
-    border-radius: $radius-medium;
-    padding: 5px 0 0 5px;
-    transition: border-color $anim-time;
+  width: 97%;
+  height: 120px;
+  resize: none;
+  border: 2px solid $modal-border-color;
+  border-radius: $radius-medium;
+  padding: 8px;
+  outline: none;
+  transition: border-color 250ms ease;
 
-    &:focus,
-    &:hover {
-        border-color: $span-buttonBackground-aHover-color;
-    }
+  &:hover,
+  &:focus {
+    border-color: $span-buttonBackground-aHover-color;
+  }
 }
 
 .modal__label-checkbox {
-    &>a {
-        color: $span-buttonBackground-aHover-color;
-    }
+  font-size: 12px;
+
+  a {
+    color: $span-buttonBackground-aHover-color;
+  }
 }
 
 .modal__bnt-sub {
-    width: 200px;
-    height: 50px;
-    margin-bottom: 10px;
-    border: none;
-    color: white;
-    background-color: $span-buttonBackground-aHover-color;
-    border-radius: $radius-small;
-    cursor: pointer;
+  align-self: center;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: $radius-small;
+  background-color: $span-buttonBackground-aHover-color;
+  color: #fff;
+  cursor: pointer;
 }

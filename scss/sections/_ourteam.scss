@@ -3,7 +3,7 @@
 .OurTeam {
     background-color: $OurTeam-section-bacground-color;
     min-height: 708px;
-    padding: 95px 0;
+    display: flex;
 }
 
 .OurTeam__container {
@@ -17,11 +17,13 @@
 .OurTeam__h2 {
     font-size: 36px;
     margin-bottom: 50px;
+    margin: 0;
 }
 
 .OurTeam__list {
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .OurTeam__li {
@@ -45,6 +47,6 @@
     fill: $regular-customers-color !important;
 }
 
-.socialNetwork__circle:hover .OurTeam__social__network {
-    fill: white !important;
+.socialNetwork__circle:hover .OurTeam__socialNetwork {
+    fill: rgb(255, 255, 255) !important;
 }

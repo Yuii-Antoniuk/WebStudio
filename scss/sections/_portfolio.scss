@@ -1,7 +1,7 @@
 // Portfolio/Projects page styles
 
-.portfolio-section {
-    width: $container-max-width;
+.portfolio__section {
+    width: 1770px;
     height: 1360px;
     margin: 50px auto;
     display: flex;
@@ -15,7 +15,7 @@
     flex-wrap: wrap;
 }
 
-.filters-items {
+.filters__items {
     background-color: $OurTeam-section-bacground-color;
     border-radius: $radius-medium;
     padding: 10px;
@@ -30,7 +30,7 @@
     }
 }
 
-.projects-list {
+.projects__list {
     min-height: 1264px;
     padding: 0;
     display: flex;
@@ -58,21 +58,21 @@
     }
 }
 
-.projects-h3 {
+.projects__h3 {
     font-size: 18px;
 }
 
-.projects-p {
+.projects__p {
     color: $gray-text-color;
     margin-bottom: 30px;
 }
 
-.project-img {
+.project__img {
     width: 370px;
     height: 294px;
 }
 
-.overlay-box {
+.overlay__box {
     width: 370px;
     height: 294px;
     position: relative;

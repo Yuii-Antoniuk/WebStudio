@@ -2,11 +2,19 @@
 
 footer {
     background-color: $hero-section-footer-bacground-color;
-    height: 252px;
+    min-height: 252px;
+}
+
+.footer__container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+}
+
+.footer__div-main {
+    width: 231px;
+    height: 101px;
 }
 
 .footer__logo {
@@ -28,36 +36,34 @@ footer {
     font-size: 14px;
 }
 
-.footerForm {
+.footer__div-form {
     width: 570px;
-    height: 86px;
+    min-height: 86px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.footer-form-h3 {
+.footerForm__h3 {
     color: $white-text-color-background-color;
 }
 
 .footer__form {
     width: 100%;
+    height: 50px;
     padding: 0;
-    margin: 0;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    gap: 12px;
 
     &>input {
-        width: 358px;
+        width: 450px;
         height: 50px;
         border: none;
         outline: none;
         border: 1px solid $light-border-color;
         background-color: $hero-section-footer-bacground-color;
         color: $white-text-color-background-color;
-        padding-left: 2%;
         border-radius: $radius-medium;
     }
 
