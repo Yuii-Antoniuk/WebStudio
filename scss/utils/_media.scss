@@ -76,6 +76,7 @@
 
     .footer__form {
         &>input {
+            width: calc(100% - 15px);
             padding: 15px 0px;
         }
 

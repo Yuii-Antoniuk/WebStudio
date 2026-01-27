@@ -24,8 +24,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="/css/animate.css">
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
 
@@ -33,6 +33,7 @@
       <div class="container header__container">
         <h1 class="animate__animated animate__tada"><span>Web</span>Studio</h1>
         <!--font-Raleway-->
+
         <nav>
           <ul class="nav__list">
             <li class="nav__item">
@@ -64,8 +65,13 @@
               </a>
             </li>
           </ul>
+        <button class="js-open-menu" aria-expanded="false">☰</button>
       </div>
     </header>
+
+        <div class="js-menu-container">
+          <button class="js-close-menu">✕</button>
+        </div>
 
     <main>
       <section class="hero">
@@ -492,6 +498,7 @@
       <a name="footer"></a>
       </div>
     </footer>
-    <script src="modal.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>

@@ -212,6 +212,28 @@ nav {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
 }
 
+.js-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease;
+  transition: -webkit-transform 250ms ease;
+  transition: transform 250ms ease;
+  transition: transform 250ms ease, -webkit-transform 250ms ease;
+  z-index: 999;
+}
+
+.js-menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  display: none;
+}
+
 .hero {
   background-image: url(/images/Img\ \(14\).png);
   background-position: center;
@@ -646,6 +668,9 @@ nav {
 footer {
   background-color: #2F303A;
   min-height: 252px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer__container {
@@ -654,9 +679,8 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -767,7 +791,6 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 10%;
 }
 
 .socialNetworks__list {
@@ -1010,9 +1033,11 @@ footer {
 }
 
 .portfolio__section {
-  width: 1770px;
-  height: 1360px;
+  min-height: 1360px;
   margin: 50px auto;
+}
+
+.portfolio__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1029,11 +1054,10 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 30px;
+  gap: 5px;
 }
 
 .filters__items {
@@ -1065,6 +1089,7 @@ footer {
           justify-content: space-between;
   -ms-flex-line-pack: justify;
       align-content: space-between;
+  gap: 15px;
 }
 
 .project {
@@ -1230,6 +1255,7 @@ footer {
             align-items: center;
   }
   .footer__form > input {
+    width: calc(100% - 15px);
     padding: 15px 0px;
   }
   .footer__form > button {

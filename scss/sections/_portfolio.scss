@@ -1,9 +1,11 @@
 // Portfolio/Projects page styles
 
 .portfolio__section {
-    width: 1770px;
-    height: 1360px;
+    min-height: 1360px;
     margin: 50px auto;
+}
+
+.portfolio__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -11,8 +13,9 @@
 
 .filters {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 30px;
+    gap: 5px;
 }
 
 .filters__items {
@@ -37,6 +40,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
+    gap: 15px;
 }
 
 .project {
