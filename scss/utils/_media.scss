@@ -8,9 +8,18 @@
         justify-content: space-between;
     }
 
+    .header__container {
+        justify-content: space-between;
+    }
+
     nav,
     .info__list {
         display: none;
+    }
+
+    .js-open-menu {
+        display: block !important;
+        cursor: pointer;
     }
 
     .hero__h2 {
@@ -28,7 +37,7 @@
     }
 
     .features__items {
-        width: 450px;
+        width: calc(100% - 15px);
     }
 
     .OurTeam__list {
