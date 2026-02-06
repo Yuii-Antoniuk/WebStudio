@@ -1,12 +1,11 @@
 .hero {
-    background-image: url(/images/Img\ \(14\).png);
+    background-image: url(../../images/desktop/index/hero-background1.jpg);
+    background: linear-gradient(0deg, )rgba(#00000065, 5);
     background-position: center;
     height: 600px;
     width: 100vw;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex($justify: center, $align: center);
     text-align: center;
     outline: auto;
 }

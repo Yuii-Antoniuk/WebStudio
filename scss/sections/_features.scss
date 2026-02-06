@@ -7,11 +7,9 @@
 }
 
 .features__container {
+    @include flex-between();
     min-height: 248px;
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .features__items {
@@ -38,56 +36,26 @@
 }
 
 .features__items {
+
+    &::before {
+        @extend %features__items-after;
+        border-radius: 5px;
+    }
+    
     &:nth-child(1)::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 120px;
-        background-image: url("images/Group.png");
-        background-color: $OurTeam-section-bacground-color;
-        background-size: 70px;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-bottom: 30px;
+        background-image: url("../../images/antena.png");
     }
 
     &:nth-child(2)::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 120px;
-        background-image: url("images/clock.png");
-        background-color: $OurTeam-section-bacground-color;
-        background-size: 70px;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-bottom: 30px;
+        background-image: url("../../images/clock.png");
     }
 
     &:nth-child(3)::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 120px;
-        background-image: url("images/diagram.png");
-        background-color: $OurTeam-section-bacground-color;
-        background-size: 70px;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-bottom: 30px;
+        background-image: url("../../images/diagram.png");
     }
 
     &:nth-child(4)::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 120px;
-        background-image: url("images/astronaut.png");
-        background-color: $OurTeam-section-bacground-color;
-        background-size: 70px;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-bottom: 30px;
+        background-image: url("../../images/austronaut.png");
     }
 }
 

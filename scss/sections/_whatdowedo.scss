@@ -22,30 +22,17 @@
 
 .first__img,
 .first__p {
-    animation-name: Y-move;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    @include animate-Y(3s, ease-in-out, infinite, alternate, 0s);
 }
 
 .second__img,
 .second__p {
-    animation-name: Y-move;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-delay: 3s;
+    @include animate-Y(3s, ease-in-out, infinite, alternate, 3s);
 }
 
 .third__img,
 .third__p {
-    animation-name: Y-move;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    @include animate-Y(3s, ease-in-out, infinite, alternate, 6s);
 }
 
 .WhatDoWeDo__img {

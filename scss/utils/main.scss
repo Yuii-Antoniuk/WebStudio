@@ -2,6 +2,8 @@
 
 @import './vars';
 @import './common';
+@import './mixins';
+@import './placeholders';
 @import '../sections/header';
 @import '../sections/mobilemenu.scss';
 @import '../sections/hero';

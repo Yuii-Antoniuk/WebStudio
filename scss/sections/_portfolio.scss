@@ -6,14 +6,11 @@
 }
 
 .portfolio__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex($justify: space-between, $direction: column);
 }
 
 .filters {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex($wrap: wrap);
     margin-bottom: 30px;
     gap: 5px;
 }
@@ -36,9 +33,7 @@
 .projects__list {
     min-height: 1264px;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include flex($justify: space-between, $wrap: wrap);
     align-content: space-between;
     gap: 15px;
 }
@@ -48,9 +43,7 @@
     height: 404px;
     text-align: center;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex($direction: column, $justify: space-between);
     transition: box-shadow 0.5s ease-in-out 200ms;
 
     &:hover {

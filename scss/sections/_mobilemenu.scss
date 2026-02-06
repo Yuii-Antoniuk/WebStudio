@@ -19,9 +19,7 @@
 
 .js-menu-container {
   position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include flex($justify: space-between, $direction: column);
   color: $text-color;
   top: 0;
   left: 0;

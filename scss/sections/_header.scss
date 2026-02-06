@@ -5,10 +5,8 @@ header {
 }
 
 .header__container {
-    display: flex;
+    @include flex($justify: space-around, $align: center, $wrap: wrap);
     align-self: center;
-    justify-content: space-around;
-    align-items: center;
     height: 40px;
 }
 
@@ -23,31 +21,31 @@ h1, .footer__logo {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
+    @include flex($justify: space-between);
 }
 
 .info__list {
     width: 333px;
     height: 16px;
-    display: flex;
-    justify-content: space-between;
+    @include flex($justify: space-between);
+}
+
+.info__link {
+    color: $gray-text-color;
 }
 
 .nav__list {
     height: 40px;
     width: 286px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex($justify: space-between, $align: center);
     padding: 0;
 }
 
 .nav__link,
 .info__link {
     height: 14px;
+    font-weight: bold;
     text-decoration: none;
-    color: $text-color;
 
     &:hover {
         color: $span-buttonBackground-aHover-color;
@@ -65,7 +63,7 @@ nav {
 .nav__link-active {
     color: $span-buttonBackground-aHover-color;
 
-    &::after {
+    &:after {
         content: "";
         position: absolute;
         top: 260%;
@@ -81,8 +79,7 @@ nav {
     }
 }
 
-.nav__item,
-.info__item {
+.nav__item {
     position: relative;
 
     &:not(.active)::after {
@@ -110,4 +107,5 @@ nav {
     width: 16px;
     height: 12px;
     transition: fill $anim-time, color $anim-time;
+    fill: $gray-text-color;
 }

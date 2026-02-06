@@ -7,10 +7,8 @@ footer {
 }
 
 .footer__container {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex($justify: space-around, $align: stretch, $direction: row, $wrap: wrap);
     align-content: center;
-    justify-content: space-around;
 }
 
 .footer__div-main {
@@ -68,14 +66,13 @@ footer {
         border-radius: $radius-medium;
     }
 
-    &>button {
+        &>button {
         width: 200px;
         height: 50px;
         background-color: $span-buttonBackground-aHover-color;
         border-radius: $radius-medium;
         border: none;
-        display: flex;
-        justify-content: center;
+        @include flex-center;
         align-items: center;
         color: $white-text-color-background-color;
 

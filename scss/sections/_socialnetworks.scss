@@ -3,16 +3,13 @@
 .socialNetworks {
     width: 206px;
     height: 80px;
-    display: flex;
-    flex-direction: column;
+    @include flex($direction: column);
 }
 
 .socialNetworks__list {
     width: 206px;
     height: 44px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flex($justify: space-between, $direction: row);
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -26,9 +23,7 @@
 .socialNetwork__circle {
     width: 44px;
     height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %centered-flex;
     border-radius: $radius-circle;
     background-color: $footer-circle-bg;
     transition: $anim-time;
