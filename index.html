@@ -252,6 +252,23 @@
                       ./images/desktop/index/whatdowedo-1-2.jpg 2x
                     "
                     type="image/jpeg"
+                    media="(min-width: 1200)"
+                  >
+                  <source
+                    srcset="
+                      ./images/tablet/index/whatdowedo-1-1.jpg 1x,
+                      ./images/tablet/index/whatdowedo-1-2.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 767px) and (max-width: 1200px)"
+                  >
+                  <source
+                    srcset="
+                      ./images/mobile/index/whatdowedo-1-1.jpg 1x,
+                      ./images/mobile/index/whatdowedo-1-2.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
                   >
                   <img
                     src="./images/desktop/index/whatdowedo-1-1.jpg"
@@ -266,40 +283,74 @@
             </li>
 
             <li class="WhatDoWeDo__li">
-              <picture>
-               <source
-                 srcset="
-                   ./images/desktop/index/whatdowedo-2-1.jpg 1x,
-                   ./images/desktop/index/whatdowedo-2-2.jpg 2x
-                 "
-                 type="image/jpeg"
-               >
-               <img
-                 src="./images/desktop/index/whatdowedo-2-1.jpg"
-                 alt="What we do"
-                 class="WhatDoWeDo__img second__img"
-               />
-             </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/index/whatdowedo-2-1.jpg 1x,
+                      ./images/desktop/index/whatdowedo-2-2.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1200)"
+                  >
+                  <source
+                    srcset="
+                      ./images/tablet/index/whatdowedo-2-1.jpg 1x,
+                      ./images/tablet/index/whatdowedo-2-2.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 767px) and (max-width: 1200px)"
+                  >
+                  <source
+                    srcset="
+                      ./images/mobile/index/whatdowedo-2-1.jpg 1x,
+                      ./images/mobile/index/whatdowedo-2-2.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  >
+                  <img
+                    src="./images/desktop/index/whatdowedo-2-1.jpg"
+                    alt="What we do"
+                    class="WhatDoWeDo__img first__img"
+                  />
+                </picture>
               <p class="WhatDoWeDo__p second__p">
                 <span>Мобільні додатки</span>
               </p>
             </li>
 
             <li class="WhatDoWeDo__li">
-             <picture> 
-               <source
-                 srcset="
-                   ./images/desktop/index/whatdowedo-3-1.jpg 1x,
-                   ./images/desktop/index/whatdowedo-3-2.jpg 2x
-                 "
-                 type="image/jpeg"
-               >
-               <img
-               src="./images/desktop/index/whatdowedo-3-1.jpg"
-                 alt="What we do"
-                 class="WhatDoWeDo__img first__img"
-               />
-             </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/index/whatdowedo-3-1.jpg 1x,
+                      ./images/desktop/index/whatdowedo-3-2.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 1200)"
+                  >
+                  <source
+                    srcset="
+                      ./images/tablet/index/whatdowedo-3-1.jpg 1x,
+                      ./images/tablet/index/whatdowedo-3-2.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width: 767px) and (max-width: 1200px)"
+                  >
+                  <source
+                    srcset="
+                      ./images/mobile/index/whatdowedo-3-1.jpg 1x,
+                      ./images/mobile/index/whatdowedo-3-2.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  >
+                  <img
+                    src="./images/desktop/index/whatdowedo-3-1.jpg"
+                    alt="What we do"
+                    class="WhatDoWeDo__img first__img"
+                  />
+                </picture>
               <p class="WhatDoWeDo__p third__p">
                 <span>Дизайнерські рішення</span>
               </p>
@@ -321,13 +372,29 @@
                    ./images/desktop/index/ourteam-img-1-2.jpg 2x
                  "
                  type="image/jpeg"
-                 >
-              <img
-                src="./images/desktop/index/ourteam-img-1-1.jpg"
-                alt="img"
-                class="OurTeam__img"
-              />
-              
+                 media="(min-width: 1200)"
+               >
+               <source
+                 srcset="
+                   ./images/tablet/index/ourteam-img-1-1.jpg 1x,
+                   ./images/tablet/index/ourteam-img-1-2.jpg 2x
+                 "
+                 type="image/jpeg"
+                 media="(min-width: 767px) and (max-width: 1200px)"
+               >
+               <source
+                 srcset="
+                   ./images/mobile/index/ourteam-img-1-1.jpg 1x,
+                   ./images/mobile/index/ourteam-img-1-2.jpg 2x
+                 "
+                 type="image/jpeg"
+                 media="(max-width: 767)"
+               >
+                <img
+                  src="./images/desktop/index/ourteam-img-1-1.jpg"
+                  alt="img"
+                  class="OurTeam__img"
+                />
              </picture>
               <h3 class="OurTeam__h3">Ігор Дем'яненко</h3>
               <p class="OurTeam__p">Product Designer</p>
@@ -365,20 +432,38 @@
 
             <li class="OurTeam__li">
               <picture>
+             <picture>
                <source
                  srcset="
                    ./images/desktop/index/ourteam-img-2-1.jpg 1x,
                    ./images/desktop/index/ourteam-img-2-2.jpg 2x
                  "
                  type="image/jpeg"
-                 >
-               <img
-                 src="./images/desktop/index/ourteam-img-2-1.jpg"
-                 alt="img"
-                 class="OurTeam__img"
-               />
+                 media="(min-width: 1200)"
+               >
+               <source
+                 srcset="
+                   ./images/tablet/index/ourteam-img-2-1.jpg 1x,
+                   ./images/tablet/index/ourteam-img-2-2.jpg 2x
+                 "
+                 type="image/jpeg"
+                 media="(min-width: 767px) and (max-width: 1200px)"
+               >
+               <source
+                 srcset="
+                   ./images/mobile/index/ourteam-img-2-1.jpg 1x,
+                   ./images/mobile/index/ourteam-img-2-2.jpg 2x
+                 "
+                 type="image/jpeg"
+                 media="(max-width: 767)"
+               >
+                <img
+                  src="./images/desktop/index/ourteam-img-2-1.jpg"
+                  alt="img"
+                  class="OurTeam__img"
+                />
              </picture>
-
+          
               <h3 class="OurTeam__h3">Ольга Рєпіна</h3>
               <p class="OurTeam__p">Frontend Developer</p>
               <ul class="socialNetworks__list">
@@ -414,19 +499,36 @@
             </li>
 
             <li class="OurTeam__li">
-              <picture>
+             <picture>
                <source
                  srcset="
                    ./images/desktop/index/ourteam-img-3-1.jpg 1x,
                    ./images/desktop/index/ourteam-img-3-2.jpg 2x
                  "
                  type="image/jpeg"
-                 >
-               <img
-                 src="./images/desktop/index/ourteam-img-3-1.jpg"
-                 alt="img"
-                 class="OurTeam__img"
-               />   
+                 media="(min-width: 1200)"
+               >
+               <source
+                 srcset="
+                   ./images/tablet/index/ourteam-img-3-1.jpg 1x,
+                   ./images/tablet/index/ourteam-img-3-2.jpg 2x
+                 "
+                 type="image/jpeg"
+                 media="(min-width: 767px) and (max-width: 1200px)"
+               >
+               <source
+                 srcset="
+                   ./images/mobile/index/ourteam-img-3-1.jpg 1x,
+                   ./images/mobile/index/ourteam-img-3-2.jpg 2x
+                 "
+                 type="image/jpeg"
+                 media="(max-width: 767)"
+               >
+                <img
+                  src="./images/desktop/index/ourteam-img-3-1.jpg"
+                  alt="img"
+                  class="OurTeam__img"
+                />
              </picture>
  
               <h3 class="OurTeam__h3">Микола Тарасов</h3>
